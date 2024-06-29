@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:todo_app/screens/today.dart';
+import 'package:todo_app/utils/_NavBar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -18,8 +20,6 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark,
           surface: Colors.black38, // Dark background color
         ),
-        // Define the default `TextTheme`. Use this to specify the default
-        // text styling for headlines, titles, bodies of text, and more.
         textTheme: TextTheme(
           displayLarge: const TextStyle(
             fontSize: 72,
@@ -32,34 +32,7 @@ class MyApp extends StatelessWidget {
           displaySmall: GoogleFonts.heebo(),
         ),
       ),
-      home: Today(),
-    );
-  }
-}
-
-class Today extends StatelessWidget {
-  const Today({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: new AppBar(
-        title: new Text('Today'),
-      ),
-      body: Center(
-        child: Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 12,
-            vertical: 12,
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Colors.black,
-        child: const Icon(Icons.add),
-      ),
+      home: const NavBar(),
     );
   }
 }
