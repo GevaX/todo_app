@@ -19,8 +19,8 @@ class NavBar extends StatelessWidget {
           onDestinationSelected: (index) => controller.selectedIndex.value = index,
           destinations: const [
             NavigationDestination(icon: Icon(Icons.calendar_today), label: 'Today'),
-            NavigationDestination(icon: Icon(Icons.calendar_month), label: 'Upcoming'),
-            NavigationDestination(icon: Icon(Icons.settings), label: 'Calender'),
+            NavigationDestination(icon: Icon(Icons.upcoming), label: 'Upcoming'),
+            NavigationDestination(icon: Icon(Icons.calendar_month), label: 'Calender'),
           ],
         ),
       ),
