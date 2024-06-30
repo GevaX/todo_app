@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo_app/screens/today.dart';
+import 'package:todo_app/widgets/add_task_button.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -23,6 +24,7 @@ class NavBar extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: const AddTaskButton(),
     );
   }
 }

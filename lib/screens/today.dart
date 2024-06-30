@@ -18,12 +18,6 @@ class Today extends StatelessWidget {
           child: const Text('Today\'s Tasks'),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Colors.black,
-        child: const Icon(Icons.add),
-      ),
     );
   }
 }
