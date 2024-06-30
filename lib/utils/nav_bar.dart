@@ -20,7 +20,7 @@ class NavBar extends StatelessWidget {
           destinations: const [
             NavigationDestination(icon: Icon(Icons.calendar_today), label: 'Today'),
             NavigationDestination(icon: Icon(Icons.calendar_month), label: 'Upcoming'),
-            NavigationDestination(icon: Icon(Icons.settings), label: 'Settings'),
+            NavigationDestination(icon: Icon(Icons.settings), label: 'Calender'),
           ],
         ),
       ),
@@ -35,6 +35,6 @@ class NavController extends GetxController {
   final screens = [
     const Today(),
     Container(color: Colors.purple, child: const Center(child: Text('Upcoming'))),
-    Container(color: Colors.orange, child: const Center(child: Text('Settings'))),
+    Container(color: Colors.orange, child: const Center(child: Text('Calender'))),
   ];
 }
