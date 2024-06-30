@@ -32,7 +32,7 @@ class NavController extends GetxController {
 
   final screens = [
     const Today(),
-    Container(color: Colors.purple, child: Center(child: Text('Upcoming'))),
-    Container(color: Colors.orange, child: Center(child: Text('Settings'))),
+    Container(color: Colors.purple, child: const Center(child: Text('Upcoming'))),
+    Container(color: Colors.orange, child: const Center(child: Text('Settings'))),
   ];
 }

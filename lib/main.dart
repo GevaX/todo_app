@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:todo_app/screens/today.dart';
-import 'package:todo_app/utils/_NavBar.dart';
+import 'package:todo_app/utils/nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
