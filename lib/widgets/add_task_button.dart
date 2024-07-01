@@ -9,7 +9,7 @@ class AddTaskButton extends StatelessWidget {
       onPressed: () {
         print('object');
       },
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).primaryColor,
       foregroundColor: Colors.black,
       child: const Icon(Icons.add),
     );

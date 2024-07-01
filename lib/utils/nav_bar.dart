@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:todo_app/screens/calender.dart';
 import 'package:todo_app/screens/today.dart';
+import 'package:todo_app/screens/upcoming.dart';
 import 'package:todo_app/widgets/add_task_button.dart';
 
 class NavBar extends StatelessWidget {
@@ -34,7 +36,7 @@ class NavController extends GetxController {
 
   final screens = [
     const Today(),
-    Container(color: Colors.purple, child: const Center(child: Text('Upcoming'))),
-    Container(color: Colors.orange, child: const Center(child: Text('Calender'))),
+    const Upcoming(),
+    const Calender(),
   ];
 }
